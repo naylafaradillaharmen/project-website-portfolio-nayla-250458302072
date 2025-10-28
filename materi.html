@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <!-- kalau pakai block dia tu widthnya full satu layar -->
+    <div class="bg-blue-300 block">Kotak 1 (block)</div>
+    <div class="bg-blue-500 block">Kotak 2 (block)</div>
+
+    <br />
+
+    <!-- kalau pakai inline dia tu widthnya sepanjang tulisan dan perginya tu jadinya ke samping trus dia tu nggak bisa dicustom height sama widthnya  -->
+    <div class="bg-pink-300 inline">Kotak 1 (inline)</div>
+    <div class="bg-pink-500 inline">Kotak 2 (inline)</div>
+
+    <!-- ini pakai dua br biar keliatan jaraknya karena kalau brnya satu dia cuma bikin dia ke bawah soalnya yang di atas pakai inline -->
+    <br /><br />
+
+    <!-- kalau pakai inline-block dia tu heigth dan widthnya bisa diatur -->
+    <div class="bg-red-300 inline-block w-24 h-12">Kotak 1 (inline-block)</div>
+    <div class="bg-red-500 inline-block w-24 h-12">Kotak 2 (inline-block)</div>
+
+    <br /><br />
+
+    <!-- kalau pakai flex tu seharusnya dia berjejer secara horizontal tapi kalau mau bikin vertikal jadinya bikin flex-col -->
+    <!-- biasanya flex berdampingan sama justify, gap, items, trus align tapi align ni biasanya nggak ada di tailwind karena diganti dengan items -->
+    <!-- justify itu buat atur secara horizontal -->
+    <!-- items itu buat atur secara vertikal -->
+    <div class="flex flex-col gap-2 bg-yellow-100 p-2">
+      <div class="bg-yellow-300 flex w-16 h-16">A</div>
+      <div class="bg-yellow-500 flex w-16 h-16">B</div>
+      <div class="bg-yellow-700 flex w-16 h-16">C</div>
+    </div>
+  </body>
+</html>
